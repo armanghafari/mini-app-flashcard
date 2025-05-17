@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="output.css">
     <title>flash card app</title>
 </head>
-<body>
+<body class="font-mono">
     <div id="container" class="w-11/12 max-w-6xl border border-solid border-black relative m-auto">
         <div id="add-flashcard-con" class="flex justify-end py-4 px-3">
             <button id="add-flashcard" class="text-lg bg-sky-500 text-slate-100 py-2 px-2 font-semibold rounded-lg">
@@ -18,5 +19,18 @@
             <div id="card-list-container"></div>
         </div>
     </div>
+
+    <div class="question-container hide" id="add-question-card">
+        <h2>add flashcard</h2>
+        <div id="wrapper">
+            <div id="error-con">
+                <span class="hide" id="error"> input fields can not empty</span>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <!-- ta dagheh 10 didam -->
+
+
 </body>
 </html>
