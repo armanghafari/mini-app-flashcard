@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.border-basic{
+    border: 1px solid black;
+}
+
+.transform-center{
+    transform: translate( -50%, -50%);
+}
