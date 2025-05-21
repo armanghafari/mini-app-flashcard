@@ -9,3 +9,31 @@
 .transform-center{
     transform: translate( -50%, -50%);
 }
+
+label{
+    color: #363d55;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+textarea{
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    resize: none;
+    color: #414a67;
+    border-radius: 0.3em;
+}
+
+textarea:not(:last-child){
+    margin-bottom: 1.2em;
+}
+
+textarea:focus{
+    border-color: #363d55;
+}
+
+.hide{
+    display: none;
+}
