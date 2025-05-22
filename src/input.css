@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.border-basic{
-    border: 1px solid black;
-}
-
 .transform-center{
     transform: translate( -50%, -50%);
 }
@@ -36,4 +32,54 @@ textarea:focus{
 
 .hide{
     display: none;
+}
+.card{
+    background-color: #ffffff;
+    box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.08);
+    padding: 1.2em;
+    border-radius: 0.4em;
+}
+
+.question-div,.answer-div{
+    text-align: justify;
+}
+
+.question-div{
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #363d55;
+}
+
+.answer-div{
+    margin-top: 1em;
+    font-weight: 400;
+    color: #414a67;
+}
+
+.show-hide-btn{
+    display: block;
+    background-color: rgb(59, 130, 246);
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6em 0;
+    border-radius: 0.3em;
+}
+
+.buttons-con{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit , .delete{
+    background-color: transparent;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+.edit{
+    color: rgb(59, 130, 246);
+}
+
+.delete{
+    color: red;
 }

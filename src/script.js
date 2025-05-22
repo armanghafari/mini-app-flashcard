@@ -74,7 +74,16 @@ function viewList() {
         addQuestionCard.classList.remove("hide");
     }); 
     buttonCon.appendChild(editButton);
-    // 
+    disableButtons(false);
+
+    let deleteButton = document.createElement("button");
+    deleteButton.setAttribute("class","delete");
+    deleteButton.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+    deleteButton.addEventListener("click", () => {
+        modifyElement(deleteButton);
+    });
+    buttonCon.appendChild(deleteButton);
+
     div.appendChild(buttonCon);
 
     listCard[0].appendChild(div);
@@ -88,7 +97,14 @@ function modifyElement (element , edit = false){
         let parentAns = parentDiv.querySelector(".answer-div").innerText;
         answer.value = parentAns;
         question.value = parentQuestion;
-        // disableButtons(true);
+        disableButtons(true);
     };
     parentDiv.remove();
+};
+
+function disableButtons(value){
+    let editButtons = document.getElementsByClassName("edit");
+    Array.from(editButtons).forEach((element) => {
+        element.disabled = value;
+    });
 };
